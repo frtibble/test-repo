@@ -12,3 +12,5 @@ Tags test
 Edit
 
 This is a bug fix #2
+
+Bump 1
