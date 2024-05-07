@@ -1,20 +1,31 @@
+name: Create Release
 on:
   push:
-    tags:
-      - 'v*'
-
-name: Create Release
+    branches:
+      - master
 
 jobs:
-  create-github-release:
-    name: Create GitHub Release
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Create Release
-        run: gh release create ${{ github.ref }} --generate-notes
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - uses: actions/checkout@master
+    - name: Bump version and push tag
+      uses: Instrument/github-tag-action@v1.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: master
+        BUMP: major 
+
+  #create-github-release:
+  #  name: Create GitHub Release
+  #  runs-on: ubuntu-latest
+  #  permissions:
+  #    contents: write
+  #  steps:
+  #    - name: Checkout code
+  #      uses: actions/checkout@v4
+  #    - name: Create Release
+  #      run: gh release create ${{ github.ref }} --generate-notes
+  #      env:
+  #        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
