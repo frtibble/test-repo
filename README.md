@@ -11,4 +11,4 @@ Workflow test
 Tags test
 Edit
 
-This is a bug fix
+This is a bug fix #2
