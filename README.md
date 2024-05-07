@@ -20,3 +20,5 @@ Another big feature request
 A third feature
 
 Version bump
+
+A feature
