@@ -18,3 +18,5 @@ Bump 3
 A big feature request
 Another big feature request
 A third feature
+
+Version bump
