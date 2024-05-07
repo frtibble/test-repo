@@ -50,7 +50,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Create Release
-        run: gh release create $OUTPUT1 --generate-notes
+        run: gh release create ${{needs.build.outputs.output1}} --generate-notes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
