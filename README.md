@@ -14,3 +14,5 @@ Edit
 This is a bug fix #2
 
 Bump 3
+
+A feature request
