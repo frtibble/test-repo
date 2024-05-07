@@ -1,5 +1,15 @@
 # Changelog
 
+## [1.2.0](https://github.com/frtibble/test-repo/compare/v1.1.0...v1.2.0) (2024-05-07)
+
+
+### Features
+
+* a second big feature request ([f4af3fd](https://github.com/frtibble/test-repo/commit/f4af3fd45778e2f9937de67889be1f4ec723c8ff))
+* add a feature after version bump ([324c882](https://github.com/frtibble/test-repo/commit/324c882ab6979c5bf54a1a7828de8db766e849ac))
+* another big feature ([27ef741](https://github.com/frtibble/test-repo/commit/27ef741b366e5c7dac5c478a61c79a92b7d5dd4a))
+* new feature request ([8945d87](https://github.com/frtibble/test-repo/commit/8945d87dab000dfb0858994f946be8ce3a975b38))
+
 ## [1.1.0](https://github.com/frtibble/test-repo/compare/v1.0.16...v1.1.0) (2024-05-07)
 
 
