@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/frtibble/test-repo/compare/v1.0.16...v1.1.0) (2024-05-07)
+
+
+### Features
+
+* performance improvements ([506f9ce](https://github.com/frtibble/test-repo/commit/506f9ce855469b3e6c44f07a6271b81200f00c7b))
+
 ## [1.0.16](https://github.com/frtibble/test-repo/compare/v1.0.15...v1.0.16) (2024-05-07)
 
 
