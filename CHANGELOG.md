@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/frtibble/test-repo/compare/v1.2.1...v1.3.0) (2024-05-08)
+
+
+### Features
+
+* a great feature ([fcda1df](https://github.com/frtibble/test-repo/commit/fcda1dfbaf48b6c4a353109dc96c278ab7492e44))
+
+
+### Bug Fixes
+
+* a bug fix ([8892a62](https://github.com/frtibble/test-repo/commit/8892a62e4ced5eefe137737b205b820d089934a6))
+
 ## [1.2.0](https://github.com/frtibble/test-repo/compare/v1.1.0...v1.2.0) (2024-05-07)
 
 
