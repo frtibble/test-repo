@@ -26,4 +26,4 @@ A feature
 A demo here
 another change
 
-fix
+fix #2
