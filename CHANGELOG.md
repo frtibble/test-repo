@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.4.0](https://github.com/frtibble/test-repo/compare/v2.3.0...v2.4.0) (2024-05-13)
+
+
+### Features
+
+* modify yaml ([950c3f1](https://github.com/frtibble/test-repo/commit/950c3f1ee3960fd0120033a5d43070ad2cf54978))
+* update yaml ([bb77fc6](https://github.com/frtibble/test-repo/commit/bb77fc64842f2e7a2ed2d7573218121ee7550fcb))
+
 ## [2.3.0](https://github.com/frtibble/test-repo/compare/v2.2.0...v2.3.0) (2024-05-13)
 
 
