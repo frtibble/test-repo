@@ -34,3 +34,5 @@ breaking change
 another one
 
 feat
+
+feat 2

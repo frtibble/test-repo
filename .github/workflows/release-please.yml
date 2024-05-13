@@ -13,6 +13,11 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - name: Configure Git
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
       - uses: google-github-actions/release-please-action@v4
         with:
           # This is a personal access token (PAT) which has been
@@ -21,8 +26,3 @@ jobs:
           # This release type is for repos with a version.txt and
           # a CHANGELOG.md.
           release-type: simple
-      - uses: actions/checkout@v4
-      - name: Configure Git
-        run: |
-          git config user.name github-actions[bot]
-          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
