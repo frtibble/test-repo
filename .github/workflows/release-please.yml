@@ -13,16 +13,7 @@ jobs:
   release-please:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Configure Git
-        run: |
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-      - uses: google-github-actions/release-please-action@v4
+      - uses: jimeh/release-please-manifest-action@v1
         with:
-          # This is a personal access token (PAT) which has been
-          # configured as a GitHub action secret.
-          token: ${{ secrets.RELEASE_TOKEN }}
-          # This release type is for repos with a version.txt and
-          # a CHANGELOG.md.
-          release-type: simple
+          app-id: ${{ secrets.RELEASE_BOT_APP_ID }}
+          private-key: ${{ secrets.RELEASE_BOT_PRIVATE_KEY }}
