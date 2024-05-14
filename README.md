@@ -36,6 +36,7 @@ another one
 feat
 
 feat 3
+feature 4
 feat
 feat 
 new feature 3
