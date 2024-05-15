@@ -1,5 +1,8 @@
 {
-    "release": {
-      "branches": ["main"]
-    }
-  }
+  "release": {
+    "branches": [
+      "main"
+    ]
+  },
+  "version": "0.1.0"
+}
