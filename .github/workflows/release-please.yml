@@ -22,7 +22,6 @@ jobs:
           # This release type is for repos with a version.txt and
           # a CHANGELOG.md.
           release-type: simple
-          skip-github-pull-request: true
         continue-on-error: true
 
       - uses: actions/checkout@v2
