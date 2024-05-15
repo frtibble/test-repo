@@ -22,7 +22,7 @@ jobs:
           # This release type is for repos with a version.txt and
           # a CHANGELOG.md.
           release-type: simple
-          skip-github-release: true
+          skip-github-release: false
           skip-github-pull-request: true
       - uses: actions/create-release@v1
         env:
