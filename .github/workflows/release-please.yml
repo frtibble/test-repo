@@ -22,6 +22,7 @@ jobs:
           # This release type is for repos with a version.txt and
           # a CHANGELOG.md.
           release-type: simple
+        continue-on-error: true
           
       - name: Echo release outputs
         if: ${{ steps.release.outputs }}
