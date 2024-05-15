@@ -28,8 +28,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: 'v${{steps.release.outputs.tag_name}}'
-          release_name: 'Ingestion Client 0.1'
+          tag_name: 'v${{steps.release.outputs.major}}'
+          release_name: 'Ingestion Client ${{steps.release.outputs.major}}'
           draft: false
           prerelease: false
 
