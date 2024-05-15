@@ -22,6 +22,7 @@ jobs:
           # This release type is for repos with a version.txt and
           # a CHANGELOG.md.
           release-type: simple
+          skip-github-pull-request: true
         continue-on-error: true
           
       - name: Echo release outputs
@@ -36,5 +37,5 @@ jobs:
       #     release_name: 'v${{steps.release.outputs.major}}'
       #     draft: false
       #     prerelease: false
-
+#
 
