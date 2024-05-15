@@ -40,3 +40,5 @@ feature 4
 feat
 feat 
 new feature 3
+
+fix 5
