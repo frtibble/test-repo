@@ -1,3 +1,41 @@
+## [2.6.1](https://github.com/frtibble/test-repo/compare/v0.2.1...v2.6.1) (2024-05-15)
+
+
+### Bug Fixes
+
+* update files ([f18db54](https://github.com/frtibble/test-repo/commit/f18db54911e8f833962b8ed9e81d41341226ae01))
+
+
+
+## [0.2.1](https://github.com/frtibble/test-repo/compare/v0.2.0...v0.2.1) (2024-05-15)
+
+
+### Bug Fixes
+
+* fixes buggy code ([ba1b6cb](https://github.com/frtibble/test-repo/commit/ba1b6cb1a6d36b97f854e507f1239f6d0d632d3e))
+
+
+
+# [0.2.0](https://github.com/frtibble/test-repo/compare/v0.1.0...v0.2.0) (2024-05-15)
+
+
+### Bug Fixes
+
+* continue on error ([c37bb98](https://github.com/frtibble/test-repo/commit/c37bb98677de90a1418721423ea84ddd1ee5fc07))
+* modify release ([5eb134a](https://github.com/frtibble/test-repo/commit/5eb134a86976103008a8fa1b4ff2c0d85c0070cc))
+* update yml ([982a959](https://github.com/frtibble/test-repo/commit/982a959829325f4e9380eab44ff7a645a526cb62))
+* use v5 ([038ee88](https://github.com/frtibble/test-repo/commit/038ee8847f9730071875f847bfdb0d696a052201))
+
+
+### Features
+
+* a new feature ([8b4b4f5](https://github.com/frtibble/test-repo/commit/8b4b4f5ee535eb3bc3b5172db6e93d4671d42346))
+* edit release yml ([7b6c460](https://github.com/frtibble/test-repo/commit/7b6c460d8b374ff7825e0f1d2efe6c58f086ebef))
+* new feature ([79cbd11](https://github.com/frtibble/test-repo/commit/79cbd11cae4265aa249d4e7948b5fd238df311af))
+* skip pr ([5b03032](https://github.com/frtibble/test-repo/commit/5b03032f335abf27e2f82fae999c88989a8f7047))
+
+
+
 # [0.1.0](https://github.com/frtibble/test-repo/compare/v2.6.0...v0.1.0) (2024-05-15)
 
 
@@ -15,16 +53,11 @@
 * a new feature ([#78](https://github.com/frtibble/test-repo/issues/78)) ([d364b8e](https://github.com/frtibble/test-repo/commit/d364b8e5c6f19c423b060ad369bfa6335c619d56))
 * a new feature ([#79](https://github.com/frtibble/test-repo/issues/79)) ([e02fc16](https://github.com/frtibble/test-repo/commit/e02fc166c91b6b4b6b8e103f2f0331bdee259e6c))
 * a new feature ([#82](https://github.com/frtibble/test-repo/issues/82)) ([f8fc0f1](https://github.com/frtibble/test-repo/commit/f8fc0f1ac5f0dc187de7af650207dbde20f4553a))
-* modify yaml ([950c3f1](https://github.com/frtibble/test-repo/commit/950c3f1ee3960fd0120033a5d43070ad2cf54978))
 * new 1 ([#85](https://github.com/frtibble/test-repo/issues/85)) ([fce3583](https://github.com/frtibble/test-repo/commit/fce35839f6b5118dd80494c88687c138901619ac))
 * new feat ([#81](https://github.com/frtibble/test-repo/issues/81)) ([476861d](https://github.com/frtibble/test-repo/commit/476861de8c0f3b887145e8a987882c6d04927419))
 * new feat ([#84](https://github.com/frtibble/test-repo/issues/84)) ([895024e](https://github.com/frtibble/test-repo/commit/895024e89d5abb5db842223bb6e4fe6d1d078d4f))
 * new feature 4 ([8a6eb83](https://github.com/frtibble/test-repo/commit/8a6eb83a2a42d5d1fe83b888dedc1de18d83424a))
-* new user ([72888ea](https://github.com/frtibble/test-repo/commit/72888ea2e9bf9e83d45d6676705f1f6e3247be2c))
 * set to false ([61eafd2](https://github.com/frtibble/test-repo/commit/61eafd2565c39f612dbb9dc0be780c994be25101))
-* update yaml ([bb77fc6](https://github.com/frtibble/test-repo/commit/bb77fc64842f2e7a2ed2d7573218121ee7550fcb))
-* update yaml release ([c3d2aae](https://github.com/frtibble/test-repo/commit/c3d2aae64e0b0b8bb326a12336e27e558bbc9f1f))
-* username ([446bb3b](https://github.com/frtibble/test-repo/commit/446bb3b506626b7f1c62bb12ef70b453954c4c98))
 
 
 
