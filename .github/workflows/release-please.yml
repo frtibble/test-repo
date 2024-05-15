@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v4
+        id: release
         with:
           # This is a personal access token (PAT) which has been
           # configured as a GitHub action secret.
@@ -27,7 +28,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: 'ingestion-0.1'
+          tag_name: 'v${{steps.release.outputs.tag_name}}'
           release_name: 'Ingestion Client 0.1'
           draft: false
           prerelease: false
