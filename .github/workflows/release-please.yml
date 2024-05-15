@@ -7,40 +7,28 @@ permissions:
   contents: write
   pull-requests: write
 
-name: release-please
+name: create-release
 
 jobs:
-  release-please:
+  create-release:
     runs-on: ubuntu-latest
+    
     steps:
-      - uses: google-github-actions/release-please-action@v4
-        id: release
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Conventional Changelog Action
+        id: changelog
+        uses: TriPSs/conventional-changelog-action@v1
         with:
-          # This is a personal access token (PAT) which has been
-          # configured as a GitHub action secret.
           token: ${{ secrets.GITHUB_TOKEN }}
-          # This release type is for repos with a version.txt and
-          # a CHANGELOG.md.
-          release-type: simple
-          skip-github-pull-request: true
-        continue-on-error: true
-
-      - uses: actions/checkout@v2
-      - name: Get commit message
-        run: |
-          echo "Commit message: ${{ github.event.head_commit.message }}"
-          
-      - name: Echo release outputs
-       # if: ${{ steps.release.outputs }}
-        run: echo '${{ toJson(steps.release) }}'
-        continue-on-error: true
-      # - uses: actions/create-release@v1
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   with:
-      #     tag_name: 'v${{steps.release.outputs.major}}'
-      #     release_name: 'v${{steps.release.outputs.major}}'
-      #     draft: false
-      #     prerelease: false
-#
-
+      - name: Create release 
+        uses: actions/create-release@v1
+        if: ${{ steps.changelog.outputs.skipped == 'false' }}
+        env:
+          token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.changelog.outputs.tag }}
+          release_name: ${{ steps.changelog.outputs.tag }}
+          body: ${{ steps.changelog.outputs.clean_changelog }}
+          replacesArtifacts: false
