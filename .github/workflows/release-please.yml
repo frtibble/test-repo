@@ -19,7 +19,7 @@ jobs:
 
       - name: Conventional Changelog Action
         id: changelog
-        uses: TriPSs/conventional-changelog-action@v1
+        uses: TriPSs/conventional-changelog-action@v5
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Create release 
