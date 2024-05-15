@@ -23,13 +23,11 @@ jobs:
           # a CHANGELOG.md.
           release-type: simple
           skip-github-pull-request: true
-      - run: |
-          echo "${{steps.release.outputs.major}}"
-          echo "${{steps.release.outputs.minor}}"
-          echo "${{steps.release.outputs.patch}}"
-          echo "${{steps.release.outputs.release_created}}"
-          echo "${{steps.release.outputs.sha}}"
-          echo "${{steps.release.outputs.tag_name}}"
+          
+      - name: Echo release outputs
+        if: ${{ steps.release.outputs }}
+        run: echo '${{ toJson(steps.release) }}'
+        continue-on-error: true
       # - uses: actions/create-release@v1
       #   env:
       #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
