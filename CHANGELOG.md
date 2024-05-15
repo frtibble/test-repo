@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.7.0](https://github.com/frtibble/test-repo/compare/v2.6.0...v2.7.0) (2024-05-15)
+
+
+### Features
+
+* a new feature ([564e586](https://github.com/frtibble/test-repo/commit/564e586177134c50464e5be153d3c0faa7fc2f6c))
+* a new feature ([#78](https://github.com/frtibble/test-repo/issues/78)) ([d364b8e](https://github.com/frtibble/test-repo/commit/d364b8e5c6f19c423b060ad369bfa6335c619d56))
+* a new feature ([#79](https://github.com/frtibble/test-repo/issues/79)) ([e02fc16](https://github.com/frtibble/test-repo/commit/e02fc166c91b6b4b6b8e103f2f0331bdee259e6c))
+* set to false ([61eafd2](https://github.com/frtibble/test-repo/commit/61eafd2565c39f612dbb9dc0be780c994be25101))
+
+
+### Bug Fixes
+
+* update yaml ([#80](https://github.com/frtibble/test-repo/issues/80)) ([77b638e](https://github.com/frtibble/test-repo/commit/77b638e1db4a6c6e6dd1832bf82442a82a68e17d))
+
 ## [2.5.0](https://github.com/frtibble/test-repo/compare/v2.4.0...v2.5.0) (2024-05-13)
 
 
