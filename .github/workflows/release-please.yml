@@ -24,9 +24,14 @@ jobs:
           release-type: simple
           skip-github-pull-request: true
         continue-on-error: true
+
+      - uses: actions/checkout@v2
+      - name: Get commit message
+        run: |
+          echo "Commit message: ${{ github.event.head_commit.message }}"
           
       - name: Echo release outputs
-        if: ${{ steps.release.outputs }}
+       # if: ${{ steps.release.outputs }}
         run: echo '${{ toJson(steps.release) }}'
         continue-on-error: true
       # - uses: actions/create-release@v1
