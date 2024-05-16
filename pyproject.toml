@@ -65,4 +65,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [package]
-version = "2.6.1"
+version = "2.7.0"
