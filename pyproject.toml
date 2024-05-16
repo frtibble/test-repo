@@ -1,3 +1,5 @@
+version = "2.7.0"
+
 [tool.poetry]
 name = "chat-with-your-data-solution-accelerator"
 version = "0.1.0"
@@ -63,6 +65,3 @@ include_namespace_packages = true
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
-[package]
-version = "2.7.0"
