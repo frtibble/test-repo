@@ -1,3 +1,12 @@
+## [2.8.1](https://github.com/frtibble/test-repo/compare/v2.8.0...v2.8.1) (2024-05-17)
+
+
+### Bug Fixes
+
+* a new fix ([cca5df2](https://github.com/frtibble/test-repo/commit/cca5df2c64158fa27c0582b269d441cfde84c6fd))
+
+
+
 # [2.8.0](https://github.com/frtibble/test-repo/compare/v2.7.0...v2.8.0) (2024-05-16)
 
 
@@ -31,15 +40,6 @@
 ### Bug Fixes
 
 * update files ([f18db54](https://github.com/frtibble/test-repo/commit/f18db54911e8f833962b8ed9e81d41341226ae01))
-
-
-
-## [0.2.1](https://github.com/frtibble/test-repo/compare/v0.2.0...v0.2.1) (2024-05-15)
-
-
-### Bug Fixes
-
-* fixes buggy code ([ba1b6cb](https://github.com/frtibble/test-repo/commit/ba1b6cb1a6d36b97f854e507f1239f6d0d632d3e))
 
 
 
