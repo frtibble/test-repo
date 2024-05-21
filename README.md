@@ -53,3 +53,5 @@ chore 2
 chore 3
 feat
 fix 2
+feat 4
+fix 2
