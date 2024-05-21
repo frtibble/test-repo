@@ -3,6 +3,7 @@ on:
     workflows: ["CI"]
     types:
       - completed
+  merge_group:
 
 permissions:
   contents: write
