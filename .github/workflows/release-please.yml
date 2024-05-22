@@ -22,7 +22,6 @@ jobs:
       - uses: codfish/semantic-release-action@v3
         id: semantic
         with:
-          dry-run: true
           tag-format: 'v${version}'
         env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
