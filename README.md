@@ -59,3 +59,4 @@ fix 2
 feat 4
 feature 
 docs
+a bug fix
