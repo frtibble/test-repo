@@ -17,20 +17,45 @@ jobs:
     if: ${{ github.event.workflow_run.conclusion == 'success' }}
     
     steps:
-      - name: Create release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3 
+
+      - uses: codfish/semantic-release-action@v3
+        id: semantic
         with:
-          tag_name:  'v3.0.0'
-          release_name: Release 
-          body: |
-            Release notes go here.
-          draft: false
-          prerelease: false
+          dry-run: true
+          tag-format: 'v${version}'
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo ${{ steps.semantic.outputs.release-version }}
 
+      - run: echo "$OUTPUTS"
+        env:
+          OUTPUTS: ${{ toJson(steps.semantic.outputs) }}
+      
+      
+      # - name: Create release
+      #   id: create_release
+      #   uses: actions/create-release@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     tag_name: ${{ github.ref }}
+      #     release_name: Release ${{ github.ref }}
+      #     body: |
+      #       Release notes go here.
+      #     draft: false
+      #     prerelease: false
 
+      # - name: Conventional Changelog Action
+      #   id: changelog
+      #   uses: TriPSs/conventional-changelog-action@v5
+      #   with:
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
+      #     output-file: 'CHANGELOG.md'
+      #     git-user-name: 'github-actions[bot]'
+      #     git-user-email: 'github-actions[bot]@users.noreply.github.com'
+      #     version-file: './pyproject.toml'
+      #     version-path: 'tool.poetry.version'   
       
       # - name: Create Release
       #   uses: actions/create-release@v1
